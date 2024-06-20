@@ -1,0 +1,56 @@
+.traffic-light {
+  width: 250px;
+  height: 720px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 40px;
+  margin: auto;
+}
+
+.light {
+  height: 180px;
+  width: 180px;
+  background-color: grey;
+  border-radius: 50%;
+  margin: 20px 0;
+  opacity: 0.4;
+  transition: opacity 0.5s;
+}
+
+.light.active {
+  opacity: 1;
+  box-shadow: 0 0 20px 10px white;
+}
+
+.light:nth-child(1) {
+  background-color: red;
+}
+.light:nth-child(2) {
+  background-color: yellow;
+}
+.light:nth-child(3) {
+  background-color: green;
+}
+
+button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 1em;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
